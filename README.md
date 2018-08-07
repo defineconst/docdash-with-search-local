@@ -1,19 +1,19 @@
 # Docdash
 [![npm package](https://img.shields.io/npm/v/docdash-with-search.svg)](https://www.npmjs.com/package/docdash-with-search) [![license](https://img.shields.io/npm/l/docdash-with-search.svg)](LICENSE.md)
 
-A clean, responsive documentation template theme for JSDoc 3 based on `Docdash`.
+A clean, responsive documentation template theme for JSDoc 3 based on [`Docdash`](https://github.com/clenemt/docdash).
 
 ![docdash-screenshot](https://cloud.githubusercontent.com/assets/447956/13398144/4dde7f36-defd-11e5-8909-1a9013302cb9.png)
 
 ![docdash-screenshot-2](https://cloud.githubusercontent.com/assets/447956/13401057/e30effd8-df0a-11e5-9f51-66257ac38e94.jpg)
 
 ## Example
-See http://clenemt.github.io/docdash/ for a sample demo. :rocket:
+See http://halzhan.github.io/docdash-with-search/ for a sample demo. :rocket:
 
 ## Install
 
 ```bash
-$ npm install docdash
+$ npm install docdash-with-search
 ```
 
 ## Usage
