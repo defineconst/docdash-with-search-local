@@ -1,4 +1,4 @@
-# docdash-with-search
+# docdash-with-search
 [![npm package](https://img.shields.io/npm/v/docdash-with-search.svg)](https://www.npmjs.com/package/docdash-with-search) [![license](https://img.shields.io/npm/l/docdash-with-search.svg)](LICENSE.md)
 
 A clean, responsive documentation template theme with search for JSDoc 3 based on [`Docdash`](https://github.com/clenemt/docdash).
