@@ -1,7 +1,7 @@
 # Docdash
-[![npm package](https://img.shields.io/npm/v/docdash.svg)](https://www.npmjs.com/package/docdash) [![license](https://img.shields.io/npm/l/docdash.svg)](LICENSE.md)
+[![npm package](https://img.shields.io/npm/v/docdash-with-search.svg)](https://www.npmjs.com/package/docdash-with-search) [![license](https://img.shields.io/npm/l/docdash-with-search.svg)](LICENSE.md)
 
-A clean, responsive documentation template theme for JSDoc 3.
+A clean, responsive documentation template theme for JSDoc 3 based on `Docdash`.
 
 ![docdash-screenshot](https://cloud.githubusercontent.com/assets/447956/13398144/4dde7f36-defd-11e5-8909-1a9013302cb9.png)
 
@@ -46,26 +46,41 @@ See the config file for the [fixtures](fixtures/fixtures.conf.json) or the sampl
 ```json
 {
     "tags": {
-        "allowUnknownTags": false
+        "allowUnknownTags": true
     },
     "source": {
-        "include": "../js",
-        "includePattern": ".js$",
-        "excludePattern": "(node_modules/|docs)"
+        "include": [
+            "fixtures/",
+            "./README.md"
+        ]
     },
-    "plugins": [
-        "plugins/markdown"
-    ],
+    "plugins": ["plugins/markdown"],
     "opts": {
-        "template": "assets/template/docdash/",
         "encoding": "utf8",
-        "destination": "docs/",
+        "template": "./",
+        "destination": "../fixtures-doc/",
         "recurse": true,
         "verbose": true
     },
+    "markdown": {
+        "parser": "gfm",
+        "hardwrap": true
+    },
     "templates": {
+        "search": true,
         "cleverLinks": false,
-        "monospaceLinks": false
+        "monospaceLinks": false,
+        "default": {
+            "outputSourceFiles": true,
+            "includeDate": false
+        },
+        "scripts": [],
+        "favicon": "",
+        "css": []
+    },
+    "docdash": {
+        "static": false,
+        "sort": true
     }
 }
 ```
@@ -78,6 +93,12 @@ Docdash supports the following options:
     "docdash": {
         "static": [false|true],  // Display the static members inside the navbar
         "sort": [false|true]     // Sort the methods in the navbar
+    },
+    "templates": {
+        "search": [false|true], // Display the search input element inside the navbar
+        "scripts": [], // Script files' URLs
+        "favicon": "", // The favicon's URL
+        "css": [] // Css files' URLs
     }
 }
 ```
@@ -85,7 +106,7 @@ Docdash supports the following options:
 Place them anywhere inside your `jsdoc.json` file.
 
 ## Thanks
-Thanks to [lodash](https://lodash.com) and [minami](https://github.com/nijikokun/minami).
+Thanks to [Docdash](https://github.com/clenemt/docdash).
 
 ## License
 Licensed under the Apache License, version 2.0. (see [Apache-2.0](LICENSE.md)).

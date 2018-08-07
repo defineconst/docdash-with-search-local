@@ -1,7 +1,7 @@
 {
-  "name": "docdash",
-  "version": "0.4.1",
-  "description": "A clean, responsive documentation template theme for JSDoc 3 inspired by lodash and minami",
+  "name": "docdash-with-search",
+  "version": "0.0.1",
+  "description": "A clean, responsive documentation template theme for JSDoc 3 with search based on docdash.",
   "main": "publish.js",
   "scripts": {
     "test": "jsdoc -c fixtures/fixtures.conf.json",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/clenemt/docdash.git"
+    "url": "https://github.com/HalZhan/docdash-with-search"
   },
   "devDependencies": {
     "jsdoc": "latest",
     "browser-sync": "latest",
     "watch-run": "latest"
   },
-  "author": "Clement Moron <clement.moron@gmail.com>",
+  "author": "Hal Zhan <halzhan163@163.com>",
   "license": "Apache-2.0",
   "keywords": [
     "jsdoc",
