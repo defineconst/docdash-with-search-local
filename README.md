@@ -20,7 +20,7 @@ $ npm install docdash-with-search
 Clone repository to your designated `jsdoc` template directory, then:
 
 ```bash
-$ jsdoc entry-file.js -t path/to/docdash
+$ jsdoc entry-file.js -t path/to/docdash-with-search
 ```
 
 ## Usage (npm)
@@ -36,7 +36,7 @@ In your `jsdoc.json` file, add a template option.
 
 ```json
 "opts": {
-  "template": "node_modules/docdash"
+  "template": "node_modules/docdash-with-search"
 }
 ```
 
