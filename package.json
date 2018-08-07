@@ -1,6 +1,6 @@
 {
   "name": "docdash-with-search",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "A clean, responsive documentation template theme for JSDoc 3 with search based on docdash.",
   "main": "publish.js",
   "scripts": {

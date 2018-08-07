@@ -105,6 +105,14 @@ Docdash supports the following options:
 
 Place them anywhere inside your `jsdoc.json` file.
 
+## Change Logs
+
+### v0.1.0(2018/08/07)
+
+
+### v0.0.2(2018/08/07)
+First version.
+
 ## Thanks
 Thanks to [Docdash](https://github.com/clenemt/docdash).
 

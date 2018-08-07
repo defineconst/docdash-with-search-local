@@ -28,7 +28,9 @@
             "outputSourceFiles": true,
             "includeDate": false
         },
-        "scripts": [],
+        "scripts": [
+            "//cdn.bootcss.com/taffydb/2.7.3/taffy.js"
+        ],
         "favicon": "",
         "css": []
     },
