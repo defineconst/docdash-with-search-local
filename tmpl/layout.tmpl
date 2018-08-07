@@ -13,7 +13,6 @@ var favicon = templates.favicon;
     <?js if(favicon) { ?>
     <link rel="shortcut icon" type="image/<?js= favicon.substr(favicon.lastIndexOf('.')+1) ?>" href="<?js= favicon ?>"/>
     <?js } ?>
-    <script src="scripts/jquery.min.js"></script>
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
     <!--[if lt IE 9]>
@@ -64,6 +63,7 @@ var favicon = templates.favicon;
 
 <script>prettyPrint();</script>
 <script src="scripts/linenumber.js"></script>
+<script src="scripts/jquery.min.js"></script>
 <script src="scripts/search.js"></script>
 <?js if (scripts && Array.isArray(scripts) && scripts.length) { ?>
     <?js scripts.forEach(function(script) { ?>
