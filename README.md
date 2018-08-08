@@ -106,6 +106,9 @@ Docdash supports the following options:
 Place them anywhere inside your `jsdoc.json` file.
 
 ## Change Logs
+### v0.1.3(2018/08/08)
+- Bugfix.
+
 ### v0.1.2(2018/08/08)
 - Bugfix.
 
