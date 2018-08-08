@@ -13,8 +13,8 @@
     "url": "https://github.com/HalZhan/docdash-with-search"
   },
   "devDependencies": {
-    "jsdoc": "latest",
     "browser-sync": "latest",
+    "jsdoc": "latest",
     "watch-run": "latest"
   },
   "author": "Hal Zhan <halzhan163@163.com>",
@@ -23,5 +23,8 @@
     "jsdoc",
     "template",
     "search"
-  ]
+  ],
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
 }

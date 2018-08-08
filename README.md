@@ -107,8 +107,9 @@ Place them anywhere inside your `jsdoc.json` file.
 
 ## Change Logs
 
-### v0.1.0(2018/08/07)
-
+### v0.1.0(2018/08/08)
+- Add supports for content and name searching.
+- Add auto-complete function to the input element.
 
 ### v0.0.2(2018/08/07)
 First version.
