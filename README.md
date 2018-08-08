@@ -106,10 +106,11 @@ Docdash supports the following options:
 Place them anywhere inside your `jsdoc.json` file.
 
 ## Change Logs
+### v0.1.2(2018/08/08)
+- Bugfix.
 
 ### v0.1.1(2018/08/08)
 - Optimized the link elements' click event.
-- 
 
 ### v0.1.0(2018/08/08)
 - Added supports for searching by comment or name.
