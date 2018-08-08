@@ -5,7 +5,7 @@
 
     var KEY_CODE_ENTER = 13;
 
-    var searchUrl = '/__search.json',
+    var searchUrl = '//halzhan.cn/docdash-with-search/search.json',
         curSuggestion = null,
         searchJson = null;
 

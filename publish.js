@@ -21,7 +21,7 @@ var data;
 var view;
 
 var outdir = path.normalize(env.opts.destination);
-var searchJsonPath = path.join(outdir, '__search.json');
+var searchJsonPath = path.join(outdir, 'search.json');
 
 function find(spec) {
     return helper.find(data, spec);
