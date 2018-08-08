@@ -10,6 +10,18 @@
         searchJson = null;
 
     /**
+     * Jump to the href.
+     * @param {String} href The url you will jump to.
+     */
+    function jumpByHref(href) {
+        if(href) {
+            location.href = href;
+            $searchInput.typeahead('val', '');
+            curSuggestion = null;
+        }
+    }
+
+    /**
      * Initialize searcher.
      * @param {Array} dataList Raw data list.
      */
@@ -30,6 +42,21 @@
                     return obj.path;
                 }
             });
+        $searchContainer.on('click', '.tt-suggestion', function(e) {
+            var $this = $(this),
+                href = $this.find('a').prop('href') || '';
+            if(href) {
+                jumpByHref(href);
+            }
+        });
+        $searchInput.bind('typeahead:select', function(e, suggestion) {
+            // console.log('Selection: ' + suggestion);
+            curSuggestion = suggestion;
+        });
+        $searchInput.bind('typeahead:autocomplete', function(e, suggestion) {
+            // console.log('Selection: ' + suggestion);
+            curSuggestion = suggestion;
+        });
         $searchInput.bind('typeahead:render', function(e, suggestion) {
             // console.log('Selection: ' + suggestion);
             curSuggestion = suggestion;
@@ -37,8 +64,8 @@
         $searchInput.on({
             keyup: function(event) {
                 if (event.keyCode === KEY_CODE_ENTER) {
-                    if($searchInput.val() && curSuggestion) {
-                        location.href = curSuggestion.path;
+                    if($searchInput.typeahead('val') && curSuggestion) {
+                        jumpByHref(curSuggestion.path);
                     }
                     return;
                 }

@@ -8,7 +8,7 @@ A clean, responsive documentation template theme with search for JSDoc 3 based o
 ![docdash-screenshot-with-search](http://halzhan.cn/docdash-with-search/overview_search.png)
 
 ## Example
-See http://halzhan.github.io/docdash-with-search/ for a sample demo. :rocket:
+See http://halzhan.cn/docdash-with-search/ for a sample demo. :rocket:
 
 ## Install
 
@@ -107,15 +107,16 @@ Place them anywhere inside your `jsdoc.json` file.
 
 ## Change Logs
 
+### v0.1.1(2018/08/08)
+- Optimized the link elements' click event.
+- 
+
 ### v0.1.0(2018/08/08)
-- Add supports for searching by comment or name.
-- Add auto-complete function to the input element.
+- Added supports for searching by comment or name.
+- Added auto-complete function to the input element.
 
 ### v0.0.2(2018/08/07)
 First version.
-
-## Thanks
-Thanks to [Docdash](https://github.com/clenemt/docdash).
 
 ## License
 Licensed under the Apache License, version 2.0. (see [Apache-2.0](LICENSE.md)).
