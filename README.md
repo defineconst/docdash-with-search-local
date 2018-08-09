@@ -23,6 +23,12 @@ Clone repository to your designated `jsdoc` template directory, then:
 $ jsdoc entry-file.js -t path/to/docdash-with-search
 ```
 
+or
+
+```bash
+$ jsdoc -c jsdoc.conf.json -t path/to/docdash-with-search
+```
+
 ## Usage (npm)
 In your projects `package.json` file add a new script:
 
@@ -40,7 +46,7 @@ In your `jsdoc.json` file, add a template option.
 }
 ```
 
-## Sample `jsdoc.json`
+## Sample `jsdoc.conf.json`
 See the config file for the [fixtures](fixtures/fixtures.conf.json) or the sample below.
 
 ```json
@@ -91,14 +97,14 @@ Docdash supports the following options:
 ```
 {
     "docdash": {
-        "static": [false|true],  // Display the static members inside the navbar
-        "sort": [false|true]     // Sort the methods in the navbar
+        "static": [false|true],  // Display the static members inside the navbar.
+        "sort": [false|true]     // Sort the methods in the navbar.
     },
     "templates": {
-        "search": [false|true], // Display the search input element inside the navbar
-        "scripts": [], // Script files' URLs
-        "favicon": "", // The favicon's URL
-        "css": [] // Css files' URLs
+        "search": [false|true], // Display the search input element inside the navbar.
+        "scripts": [], // Script files' URLs will be added to the html files orderly with script elements.
+        "favicon": "", // The favicon's URL.
+        "css": [] // Css files' URLs will be added be added to the html files orderly with link elements.
     }
 }
 ```
@@ -106,6 +112,9 @@ Docdash supports the following options:
 Place them anywhere inside your `jsdoc.json` file.
 
 ## Change Logs
+### v0.1.4(2018/08/09)
+- Optimized the search function.
+
 ### v0.1.3(2018/08/08)
 - Bugfix.
 
