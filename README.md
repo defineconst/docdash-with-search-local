@@ -3,12 +3,12 @@
 
 A clean, responsive documentation template theme with search for JSDoc 3 based on [`Docdash`](https://github.com/clenemt/docdash).
 
-![docdash-screenshot-overview](http://halzhan.cn/docdash-with-search/overview.png)
+![docdash-screenshot-overview](https://geekhal.cn/docdash-with-search/overview.png)
 
-![docdash-screenshot-with-search](http://halzhan.cn/docdash-with-search/overview_search.png)
+![docdash-screenshot-with-search](https://geekhal.cn/docdash-with-search/overview_search.png)
 
 ## Example
-See http://halzhan.cn/docdash-with-search/ for a sample demo. :rocket:
+See https://geekhal.cn/docdash-with-search/ for a sample demo. :rocket:
 
 ## Install
 
